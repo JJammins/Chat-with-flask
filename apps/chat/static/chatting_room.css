@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Ownglyph_jooreeletter-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #f5f5dc;
+    font-family: 'Ownglyph_jooreeletter-Rg', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5dc;
+}
+
+.top-bar{
+    margin: 0px;
+    background-color: #FAF1CB;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.chat_user{
+    display: flex;
+}
+
+p{
+    margin: 0px;
+    padding-top: 10px;
+    margin-left:10px;
+}
+
+img{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.messages{
+    border: 1px solid black;
+    position: relative;
+    width: 330px;
+    height: 568px;
+    border-radius: 16px;
+    background-color: rgb(171, 193, 209);
+    background-image: url('채팅방배경.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul{
+    max-height: 420px;
+    overflow: auto;
+}
+
+ul > li{
+    position: relative;
+    left: auto;
+    list-style-type: none;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 6px;
+    background-color: #C0E350;
+    border-radius: 8px;
+}
+
+ul > li::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 0;
+    height: 0; 
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid #C0E350;
+  }
+  form{
+    display: flex;
+    /* background-color: #232323; */
+    position: absolute;
+    bottom: 0;
+    border-radius: 16px;
+  }
+
+.form-control{
+    font-size: 15px;
+    margin: 0;
+    border: none;
+    height: 45px;
+    resize:none;
+    width: 250px;
+    border-bottom-left-radius: 16px;
+    /* border-top-left-radius: 16px; */
+    border-right: none;
+    font-family: 'Ownglyph_jooreeletter-Rg', Arial, sans-serif;
+}
+.form-control:focus{
+    outline:none;
+}
+
+.btn-primary{
+    cursor: pointer;
+    width: 76px;
+    background-color: #C0E350;
+    /* border-top-right-radius: 16px; */
+    border-bottom-right-radius: 16px;
+    border: none;
+    font-family: 'Ownglyph_jooreeletter-Rg', Arial, sans-serif;
+}

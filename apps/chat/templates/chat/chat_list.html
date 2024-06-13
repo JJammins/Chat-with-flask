@@ -1,0 +1,22 @@
+{% extends 'chat/layout-chat.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('chat.static', filename='chat_list.css') }}">
+<div class="chat_lists">
+    <a href="{{ url_for('chat.chatting_room') }}">
+        <div class="friend_photo"></div>
+        <div class="chat_box">
+            <p class="friend_name">친구1</p>
+            <p class="friend_message">집 언제감?</p>
+        </div>
+    </a>
+</div>
+<div class="chat_lists">
+    <a href="{{ url_for('chat.chatting_room') }}">
+        <div class="friend_photo"></div>
+        <div class="chat_box">
+            <p class="friend_name">친구2</p>
+            <p class="friend_message">뭐해?</p>
+        </div>
+    </a>
+</div>
+{% endblock %}

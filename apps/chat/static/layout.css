@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Ownglyph_jooreeletter-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ownglyph_jooreeletter-Rg', Arial, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #41734e;
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.top-bar span:first-child {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.icon-group {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-group span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.side-bar {
+    position: fixed;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    background-color: #41734e;
+    padding-top: 80px;
+    box-sizing: border-box;
+    transition: width 0.3s;
+    z-index: 1;
+}
+
+.sidebar-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    background-color: #41734e;
+}
+
+.sidebar-header img {
+    width: 80px;
+    height: 70px;
+    background-color: #41734e;
+    /* border-radius: 50%; */
+}
+
+.side-bar div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.side-bar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.side-bar a:hover {
+    background-color: #599e6d;
+}
+
+.container {
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    width: calc(100% - 120px);
+    box-sizing: border-box;
+    transition: margin-left 0.3s;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

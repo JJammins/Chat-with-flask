@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('chat.static', filename='login.css') }}">
+    <title>로그인</title>
+</head>
+<body>
+    <div class="table">
+        <h2>로그인</h2>
+        <form>
+            <p>{{ form.email(placeholder="이메일") }}</p>
+            <p>{{ form.password(placeholder="비밀번호") }}</p>
+            <input type="submit" value="로그인" formaction="{{ url_for('chat.chat_list') }}">
+            <input type="submit" value="회원가입">
+        </form>
+    </div>
+</body>
+</html>

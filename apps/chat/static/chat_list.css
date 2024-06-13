@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Ownglyph_jooreeletter-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ownglyph_jooreeletter-Rg', Arial, sans-serif;
+    background-color: #f5f5dc;
+}
+
+.chat_lists {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.chat_lists:hover {
+    background-color: #f0f0f0;
+}
+
+.chat_lists a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.friend_photo {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chat_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.friend_name {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.friend_message {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+    color: #555;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('chat.static', filename='chatting_room.css') }}">
+    <title>Chatting Room</title>
+</head>
+<body>
+    <div class="container">
+        <div class="messages">
+            <div class="top-bar">
+                <div class="chat_user">
+                    <div class="user_photo">
+                        <img src="{{ url_for('chat.static', filename='퍼바오.png') }}">
+                    </div>
+                    <div class="user"> 
+                        <p class="user_name">김재민</p>
+                        <p class="user_count">2</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="message">
+                <ul>
+                    {% for message in messages %}
+                    <li>
+                        {{ message.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="emoticon"></div>
+            <div class="input-form">
+                <form action="{{ url_for('chat.chatting_room') }}" method="post">
+                    {{ form.csrf_token }}
+                    {{ form.chat(type="text", rows=5, cols=50, autocomplete="off", placeholder="메시지를 입력하세요", class="form-control") }}
+                    {{ form.submit(type="submit", class="btn-primary") }}
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

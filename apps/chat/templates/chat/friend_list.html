@@ -1,0 +1,53 @@
+{% extends 'chat/layout-friend.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('chat.static', filename='friend_list.css') }}">
+
+<div class="my_profile">
+    <div class="my_photo">
+    </div>
+    <div class="profile">
+        <p class="my_name">김재민</p>
+        <p class="my_message">개어려움개어려움</p>
+    </div>
+</div>
+<hr>
+<div class="friends_count">친구 5</div>
+    <div class="friends_list">
+        <div class="friends_profiles">
+            <div class="friend_photo"></div>
+            <div class="friends_profile">
+                <p class="friend_name">1번친구</p>
+                <p class="friend_message">상태 메시지</p>
+            </div>
+        </div>
+        <div class="friends_profiles">
+            <div class="friend_photo"></div>
+            <div class="friends_profile">
+                <p class="friend_name">2번친구</p>
+                <p class="friend_message">상태 메시지</p>
+            </div>
+        </div>
+        <div class="friends_profiles">
+            <div class="friend_photo"></div>
+            <div class="friends_profile">
+                <p class="friend_name">3번친구</p>
+                <p class="friend_message">상태 메시지</p>
+            </div>
+        </div>
+        <div class="friends_profiles">
+            <div class="friend_photo"></div>
+            <div class="friends_profile">
+                <p class="friend_name">4번친구</p>
+                <p class="friend_message">상태 메시지</p>
+            </div>
+        </div>
+        <div class="friends_profiles">
+            <div class="friend_photo"></div>
+            <div class="friends_profile">
+                <p class="friend_name">5번친구</p>
+                <p class="friend_message">상태 메시지</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

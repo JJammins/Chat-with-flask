@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('chat.static', filename='layout.css') }}">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>CHAT LIST</title>
+</head>
+<body>
+    <div class="top-bar">
+        <span>채팅</span>
+        <div class="icon-group">
+            <span><i class="fas fa-search"></i></span> 
+            <span><i class="fa-regular fa-comments"></i></span>
+            <span><i class="fas fa-cog"></i></span>
+        </div>
+    </div>
+    <div class="side-bar">
+        <div class="sidebar-header">
+            <img src="{{ url_for('chat.static', filename='판다.png') }}" alt="Image">
+        </div>
+        <div class="chat_list"> 
+            <a href="{{ url_for('chat.chat_list')}}">
+                <i class="fas fa-comment fa-2x"></i>
+            </a>
+        </div>
+        <div class="friend_list">
+            <a href="{{ url_for('chat.friends_list')}}">
+                <i class="fas fa-user fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="https://kit.fontawesome.com/c8e2b99a17.js" crossorigin="anonymous"></script>
+</body>
+</html>
