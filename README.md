@@ -3,6 +3,9 @@
 제한시간 내로 Flask 프레임워크를 활용해 대화의 내용만 DB에 저장되는 채팅 웹사이트 제작
 
 
+학원 우수상 수상
+
+
 ![스크린샷 2024-06-13 165540](https://github.com/user-attachments/assets/f1473888-fe79-4f3b-b38b-d7566f910de5)
 
 
